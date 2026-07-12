@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录 - 高校查询平台</title>
+    <link rel="stylesheet" href="css/new_file.css">
+    <style>
+        table{
+            margin:0 auto;
+            border-collapse: collapse;
+        }
+        td{
+            padding:10px 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>用户登录中心</h1>
+    </header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="register.html">注册账号</a>
+        <a href="login.html" class="active">用户登录</a>
+    </nav>
+    <main class="form-box">
+        <h2>请登录您的账号</h2>
+        <form action="college_list.html">
+            <table border="0">
+                <tr>
+                    <td align="right">用户名：</td>
+                    <td><input type="text" required placeholder="请输入用户名"></td>
+                </tr>
+                <tr>
+                    <td align="right">登录密码：</td>
+                    <td><input type="password" required placeholder="请输入密码"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="登录进入院校专区" class="btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p class="tip">没有账号？<a href="register.html">立即注册</a></p>
+    </main>
+    <footer>
+        <p>登录成功后即可查看全部大学详情</p>
+    </footer>
+	<script src="js/common.js"></script>
+	<script src="js/login.js"></script>
+</body>
+</html>

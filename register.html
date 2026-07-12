@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册 - 高校查询平台</title>
+	<link rel="stylesheet" href="css/new_file.css">
+    <style>
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto !important;
+            margin-right: 5px;
+        }
+        .one-line {
+        white-space: nowrap;
+        }
+        .btn-box {
+            white-space: nowrap;
+         }
+         .form-box .btn {
+            width: auto !important; 
+            padding: 6px 22px !important; 
+            font-size: 14px !important; 
+             margin: 0 8px; 
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>新用户免费注册</h1>
+    </header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="register.html" class="active">注册账号</a>
+        <a href="login.html">用户登录</a>
+    </nav>
+    <main class="form-box">
+        <h2>填写信息完成注册</h2>
+        <form action="login.html">
+            <table border="0" cellpadding="8" width="100%">
+                <tr>
+                    <td width="120" align="right">用户名：</td>
+                    <td><input type="text" required placeholder="请设置用户名"></td>
+                </tr>
+                <tr>
+                    <td align="right">登录密码：</td>
+                    <td><input type="password" required placeholder="设置6-12位密码"></td>
+                </tr>
+                <tr>
+                    <td align="right">确认密码：</td>
+                    <td><input type="password" required placeholder="再次输入密码"></td>
+                </tr>
+                <tr>
+                    <td align="right">手机号码：</td>
+                    <td><input type="tel" placeholder="请输入手机号"></td>
+                </tr>
+                <tr>
+                    <td align="right">意向省份：</td>
+                    <td>
+                        <select>
+                            <option>北京市</option>
+                            <option>上海市</option>
+                            <option>浙江省</option>
+                            <option>广东省</option>
+                            <option>江苏省</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">性别：</td>
+                    <td>
+                        <input type="radio" name="gender" checked><span>男</span>
+                        <input type="radio" name="gender"><span>女</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">兴趣类型：</td>
+                    <td>
+                        <span><input type="checkbox">理工类</span>
+                        <span><input type="checkbox">文史类</span>
+                        <span><input type="checkbox">医学类</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="立即注册" class="btn">
+                        <input type="reset" value="重置" class="btn btn-green">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <p>注册成功后自动跳转登录页面</p>
+    </footer>
+	<script src="js/common.js"></script>
+	<script src="js/register.js"></script>
+</body>
+</html>
